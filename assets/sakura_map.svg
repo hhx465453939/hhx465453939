@@ -1,0 +1,462 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="450">
+  <defs>
+    <path id="petal" d="M0,0 C-5,-5 -10,-15 -5,-20 C-2,-23 2,-20 0,-18 C-2,-20 2,-23 5,-20 C10,-15 5,-5 0,0 Z" fill="#D9A098" opacity="0.9"/>
+    <path id="petal_dark" d="M0,0 C-4,-4 -8,-12 -4,-16 C-1,-18 1,-16 0,-14 C-1,-16 1,-18 4,-16 C8,-12 4,-4 0,0 Z" fill="#C47E73" opacity="0.7"/>
+    <path id="petal_light" d="M0,0 C-6,-6 -12,-18 -6,-24 C-3,-27 3,-24 0,-21 C-3,-24 3,-27 6,-24 C12,-18 6,-6 0,0 Z" fill="#E8BDB6" opacity="0.8"/>
+    
+    <!-- Text styling -->
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 84px; font-weight: 800; fill: #f3f4f6; text-anchor: middle; letter-spacing: 2px;}
+      .tags { font-family: "Courier New", Courier, monospace; font-size: 22px; font-weight: 600; fill: #d1d5db; text-anchor: middle; letter-spacing: 1.5px; }
+      .quote { font-family: "Georgia", serif; font-size: 24px; font-style: italic; fill: #9ca3af; text-anchor: middle; letter-spacing: 1px; }
+      .tag-box { fill: rgba(255, 255, 255, 0.05); stroke: rgba(255, 255, 255, 0.15); stroke-width: 1.5; rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Claude-style warm dark background -->
+  <rect width="800" height="450" fill="#252220" />
+
+  <!-- Data/Quant Grid & Abstract Map Lines (The Paradox) -->
+  <g opacity="0.3">
+    <!-- Grid -->
+    <path d="M0,50 L800,50 M0,100 L800,100 M0,150 L800,150 M0,200 L800,200 M0,250 L800,250 M0,300 L800,300 M0,350 L800,350 M0,400 L800,400" stroke="#3D3633" stroke-width="0.5" stroke-dasharray="2,4"/>
+    <path d="M100,0 L100,450 M200,0 L200,450 M300,0 L300,450 M400,0 L400,450 M500,0 L500,450 M600,0 L600,450 M700,0 L700,450" stroke="#3D3633" stroke-width="0.5" stroke-dasharray="2,4"/>
+    
+    <!-- Abstract Contour / Geographic Lines -->
+    <path d="M-50,80 Q 200,300 450,50 T 850,350" fill="none" stroke="#4A413D" stroke-width="1.5" />
+    <path d="M-50,120 Q 250,350 500,80 T 850,400" fill="none" stroke="#4A413D" stroke-width="1" />
+    <path d="M-50,160 Q 300,400 550,110 T 850,450" fill="none" stroke="#4A413D" stroke-width="0.5" />
+    
+    <!-- Node network (Agentic/Tech) -->
+    <circle cx="200" cy="240" r="3" fill="#D9A098" opacity="0.5"/>
+    <circle cx="450" cy="150" r="3" fill="#D9A098" opacity="0.5"/>
+    <circle cx="650" cy="210" r="3" fill="#D9A098" opacity="0.5"/>
+    <path d="M200,240 L450,150 L650,210" fill="none" stroke="#D9A098" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.5"/>
+  </g>
+
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="15.6s" begin="-7.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="-23 -52" to="290 538" dur="15.6s" begin="-7.2s" repeatCount="indefinite" />
+    <g transform="scale(1.05)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.6s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="10.4s" begin="-15.4s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="212 -33" to="558 534" dur="10.4s" begin="-15.4s" repeatCount="indefinite" />
+    <g transform="scale(1.28)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.0s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="14.4s" begin="-14.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="-82 -50" to="209 526" dur="14.4s" begin="-14.1s" repeatCount="indefinite" />
+    <g transform="scale(0.73)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.1s" begin="-4.6s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="596 -10" to="850 488" dur="17.1s" begin="-4.6s" repeatCount="indefinite" />
+    <g transform="scale(1.41)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.6s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.9s" begin="-13.0s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="372 -31" to="644 484" dur="13.9s" begin="-13.0s" repeatCount="indefinite" />
+    <g transform="scale(1.13)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.5s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.4s" begin="-7.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="790 -60" to="1036 463" dur="16.4s" begin="-7.2s" repeatCount="indefinite" />
+    <g transform="scale(0.78)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.3s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.5s" begin="-4.0s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="661 -44" to="1050 476" dur="17.5s" begin="-4.0s" repeatCount="indefinite" />
+    <g transform="scale(1.38)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.1s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="14.3s" begin="-0.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="231 -12" to="534 496" dur="14.3s" begin="-0.8s" repeatCount="indefinite" />
+    <g transform="scale(1.43)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.0s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.7s" begin="-1.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="477 -25" to="800 529" dur="13.7s" begin="-1.8s" repeatCount="indefinite" />
+    <g transform="scale(0.85)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.0s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8.0s" begin="-9.7s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="389 -12" to="752 515" dur="8.0s" begin="-9.7s" repeatCount="indefinite" />
+    <g transform="scale(0.91)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.7s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="7.9s" begin="-2.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="625 -30" to="906 480" dur="7.9s" begin="-2.1s" repeatCount="indefinite" />
+    <g transform="scale(0.71)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.9s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="12.5s" begin="-2.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="716 -38" to="953 484" dur="12.5s" begin="-2.2s" repeatCount="indefinite" />
+    <g transform="scale(1.23)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.5s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.3s" begin="-15.6s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="207 -80" to="373 486" dur="16.3s" begin="-15.6s" repeatCount="indefinite" />
+    <g transform="scale(0.74)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.4s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.8s" begin="-9.6s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="584 -78" to="701 522" dur="16.8s" begin="-9.6s" repeatCount="indefinite" />
+    <g transform="scale(1.34)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.0s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.7s" begin="-8.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="756 -65" to="957 473" dur="17.7s" begin="-8.8s" repeatCount="indefinite" />
+    <g transform="scale(1.24)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.3s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.8s" begin="-7.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="150 -39" to="274 485" dur="13.8s" begin="-7.2s" repeatCount="indefinite" />
+    <g transform="scale(1.06)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.6s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.7s" begin="-12.5s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="203 -55" to="399 516" dur="13.7s" begin="-12.5s" repeatCount="indefinite" />
+    <g transform="scale(0.73)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8.0s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="12.4s" begin="-6.5s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="216 -16" to="593 471" dur="12.4s" begin="-6.5s" repeatCount="indefinite" />
+    <g transform="scale(1.47)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.8s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="7.1s" begin="-13.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="26 -27" to="221 481" dur="7.1s" begin="-13.8s" repeatCount="indefinite" />
+    <g transform="scale(1.34)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="12.2s" begin="-4.5s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="214 -57" to="404 470" dur="12.2s" begin="-4.5s" repeatCount="indefinite" />
+    <g transform="scale(0.96)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.0s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="7.0s" begin="-8.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="569 -42" to="873 524" dur="7.0s" begin="-8.3s" repeatCount="indefinite" />
+    <g transform="scale(0.73)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.0s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8.0s" begin="-4.5s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="468 -50" to="746 483" dur="8.0s" begin="-4.5s" repeatCount="indefinite" />
+    <g transform="scale(0.72)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.7s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="11.6s" begin="-2.0s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="61 -65" to="238 543" dur="11.6s" begin="-2.0s" repeatCount="indefinite" />
+    <g transform="scale(1.39)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.1s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="10.1s" begin="-7.7s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="643 -49" to="1037 522" dur="10.1s" begin="-7.7s" repeatCount="indefinite" />
+    <g transform="scale(1.36)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.6s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="7.2s" begin="-2.4s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="92 -13" to="389 513" dur="7.2s" begin="-2.4s" repeatCount="indefinite" />
+    <g transform="scale(0.97)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.5s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="10.8s" begin="-4.4s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="276 -74" to="557 491" dur="10.8s" begin="-4.4s" repeatCount="indefinite" />
+    <g transform="scale(0.80)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.2s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="9.1s" begin="-17.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="442 -50" to="665 485" dur="9.1s" begin="-17.2s" repeatCount="indefinite" />
+    <g transform="scale(1.38)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.2s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.1s" begin="-0.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="671 -62" to="967 542" dur="17.1s" begin="-0.3s" repeatCount="indefinite" />
+    <g transform="scale(1.17)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.1s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="14.1s" begin="-16.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="531 -58" to="711 484" dur="14.1s" begin="-16.3s" repeatCount="indefinite" />
+    <g transform="scale(1.28)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.3s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.8s" begin="-9.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="-82 -14" to="60 507" dur="17.8s" begin="-9.2s" repeatCount="indefinite" />
+    <g transform="scale(1.35)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.1s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.9s" begin="-17.5s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="777 -57" to="1062 502" dur="16.9s" begin="-17.5s" repeatCount="indefinite" />
+    <g transform="scale(1.49)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.8s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.1s" begin="-12.9s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="325 -30" to="590 491" dur="16.1s" begin="-12.9s" repeatCount="indefinite" />
+    <g transform="scale(1.20)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.8s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8.0s" begin="-8.0s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="713 -60" to="956 486" dur="8.0s" begin="-8.0s" repeatCount="indefinite" />
+    <g transform="scale(0.94)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.3s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.6s" begin="-13.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="334 -22" to="507 534" dur="13.6s" begin="-13.3s" repeatCount="indefinite" />
+    <g transform="scale(1.34)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.1s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="10.9s" begin="-10.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="545 -25" to="903 548" dur="10.9s" begin="-10.1s" repeatCount="indefinite" />
+    <g transform="scale(1.11)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.4s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="16.6s" begin="-3.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="265 -32" to="383 526" dur="16.6s" begin="-3.8s" repeatCount="indefinite" />
+    <g transform="scale(1.44)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.3s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="9.4s" begin="-13.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="36 -48" to="205 491" dur="9.4s" begin="-13.1s" repeatCount="indefinite" />
+    <g transform="scale(0.67)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.8s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.2s" begin="-12.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="750 -30" to="1065 477" dur="13.2s" begin="-12.3s" repeatCount="indefinite" />
+    <g transform="scale(1.19)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.5s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="15.3s" begin="-4.4s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="196 -10" to="558 506" dur="15.3s" begin="-4.4s" repeatCount="indefinite" />
+    <g transform="scale(0.65)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.6s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="14.8s" begin="-17.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="-58 -75" to="147 532" dur="14.8s" begin="-17.1s" repeatCount="indefinite" />
+    <g transform="scale(0.80)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.4s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.5s" begin="-6.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="525 -23" to="874 541" dur="13.5s" begin="-6.2s" repeatCount="indefinite" />
+    <g transform="scale(1.39)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.2s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.5s" begin="-2.1s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="599 -57" to="849 547" dur="13.5s" begin="-2.1s" repeatCount="indefinite" />
+    <g transform="scale(0.68)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.3s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="15.7s" begin="-6.3s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="-79 -62" to="45 540" dur="15.7s" begin="-6.3s" repeatCount="indefinite" />
+    <g transform="scale(1.23)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.8s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.1s" begin="-8.7s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="50 -70" to="151 536" dur="17.1s" begin="-8.7s" repeatCount="indefinite" />
+    <g transform="scale(1.07)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.7s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8.1s" begin="-3.6s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="635 -48" to="1026 535" dur="8.1s" begin="-3.6s" repeatCount="indefinite" />
+    <g transform="scale(1.46)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.6s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="15.3s" begin="-15.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="277 -25" to="493 475" dur="15.3s" begin="-15.2s" repeatCount="indefinite" />
+    <g transform="scale(0.77)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.1s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="9.9s" begin="-7.7s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="573 -15" to="912 468" dur="9.9s" begin="-7.7s" repeatCount="indefinite" />
+    <g transform="scale(0.78)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5.2s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="15.1s" begin="-17.6s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="568 -15" to="715 517" dur="15.1s" begin="-17.6s" repeatCount="indefinite" />
+    <g transform="scale(0.74)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7.5s" repeatCount="indefinite" />
+      <use href="#petal_dark" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="13.9s" begin="-9.8s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="434 -39" to="555 523" dur="13.9s" begin="-9.8s" repeatCount="indefinite" />
+    <g transform="scale(0.78)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3.5s" repeatCount="indefinite" />
+      <use href="#petal" />
+    </g>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="17.1s" begin="-6.2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="translate" from="313 -18" to="512 482" dur="17.1s" begin="-6.2s" repeatCount="indefinite" />
+    <g transform="scale(1.31)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.3s" repeatCount="indefinite" />
+      <use href="#petal_light" />
+    </g>
+  </g>
+  <!-- Profile Text Overlay (The Foreground) -->
+  <g transform="translate(0, 50)">
+    <!-- Main Name -->
+    <text x="400" y="130" class="title">Alex Huang</text>
+    
+    <!-- Tagline Backgrounds -->
+    <rect x="40" y="210" width="240" height="40" class="tag-box" />
+    <rect x="300" y="210" width="200" height="40" class="tag-box" />
+    <rect x="515" y="210" width="260" height="40" class="tag-box" />
+    
+    <!-- Tagline Text -->
+    <text x="400" y="237" class="tags">
+      <tspan x="160">Veterinary PhD</tspan>
+      <tspan x="400">Quant Trader</tspan>
+      <tspan x="645">Benevolent Hacker</tspan>
+    </text>
+    
+    <!-- Separators -->
+    <text x="290" y="237" class="tags" fill="#6b7280">|</text>
+    <text x="507" y="237" class="tags" fill="#6b7280">|</text>
+    
+    <!-- Quote -->
+    <text x="400" y="320" class="quote">"Wielding cold algorithms to heal a fragile world."</text>
+  </g>
+
+</svg>
